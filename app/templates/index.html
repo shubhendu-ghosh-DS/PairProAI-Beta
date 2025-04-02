@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PairProAI - Your AI Pair Programmer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>PairProAI</h1>
+        <p class="subtitle">Your AI-Powered Pair Programmer</p>
+
+        <div class="input-container">
+            <label for="user_code">Paste Your Code:</label>
+            <textarea id="user_code" rows="8" placeholder="Enter your code..."></textarea>
+        </div>
+
+        <div class="options-container">
+            <label for="option">Choose an Option:</label>
+            <select id="option">
+                <option value="Code Translation">Code Translation</option>
+                <option value="Code Improvements">Code Improvements</option>
+                <option value="Simplify Code">Simplify Code</option>
+                <option value="Write Test Cases">Write Test Cases</option>
+                <option value="Improve Efficiency">Improve Efficiency</option>
+                <option value="Debug Your Code">Debug Your Code</option>
+            </select>
+
+            <div id="language_select" class="hidden">
+                <label for="target_language">Target Language:</label>
+                <select id="target_language">
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="C++">C++</option>
+                    <option value="C#">C#</option>
+                    <option value="Ruby">Ruby</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Swift">Swift</option>
+                    <option value="Go">Go</option>
+                    <option value="TypeScript">TypeScript</option>
+                </select>
+            </div>
+
+            <div id="error_message_box" class="hidden">
+                <label for="error_message">Paste Error Message:</label>
+                <textarea id="error_message" rows="3"></textarea>
+            </div>
+        </div>
+
+        <button id="generate_btn">Generate Solution</button>
+
+        <div id="output_container" class="hidden">
+            <h2>Generated Code</h2>
+            <pre id="generated_code"></pre>
+
+            <h2>Explanation</h2>
+            <p id="explanation"></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
