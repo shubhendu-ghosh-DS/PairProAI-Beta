@@ -1,0 +1,211 @@
+/* Neumorphic Futuristic Design */
+body {
+    font-family: 'Inter', sans-serif;
+    background: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+    width: 85%;
+    max-width: 700px;
+    background: #1e1e1e;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 10px 10px 20px #0e0e0e, -10px -10px 20px #2e2e2e;
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    font-size: 42px;
+    color: #00f2ff;
+    margin-bottom: 10px;
+    text-shadow: 0px 3px 10px rgba(0, 242, 255, 0.7);
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #b0b0b0;
+    margin-bottom: 25px;
+}
+
+/* Input Fields */
+textarea, select, button {
+    width: 100%;
+    padding: 16px;
+    margin: 14px 0;
+    border-radius: 12px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+}
+
+/* Code Input */
+textarea {
+    background: #1c1c1c;
+    color: #ffffff;
+    box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #2e2e2e;
+    transition: 0.3s;
+}
+
+textarea:focus {
+    box-shadow: inset 3px 3px 6px #0e0e0e, inset -3px -3px 6px #2e2e2e, 0px 0px 12px #00f2ff;
+}
+
+/* Select Dropdown */
+select {
+    background: #1c1c1c;
+    color: #ffffff;
+    box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #2e2e2e;
+    cursor: pointer;
+}
+
+/* Button Styling */
+button {
+    width: 30%;
+    background: #00f2ff;
+    color: #121212;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 5px 5px 10px #0e0e0e, -5px -5px 10px #2e2e2e;
+}
+
+button:hover {
+    background: #00c2d3;
+    box-shadow: 0px 0px 20px rgba(0, 242, 255, 0.8);
+}
+
+/* Output Section */
+#output_container {
+    margin-top: 30px;
+    padding: 20px;
+    background: #222222;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px #0e0e0e, -5px -5px 15px #2e2e2e;
+    text-align: left;
+}
+
+/* Code Block */
+pre {
+    background: #1a1a1a;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 15px;
+    line-height: 1.5;
+    border-left: 5px solid #00f2ff;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Explanation Text Container */
+#explanation {
+    background: #1c1c1c; /* Match input background */
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff; /* Match input text color */
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    box-shadow: inset 5px 5px 10px #0e0e0e, inset -5px -5px 10px #2e2e2e; /* Match input shadow */
+}
+
+/* Heading styles (h1, h2, etc.) */
+#explanation h1, #explanation h2, #explanation h3, #explanation h4, #explanation h5, #explanation h6 {
+    color: #ffffff; /* Match header color */
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-shadow: 0px 2px 8px rgba(72, 73, 73, 0.7); /* Add similar text shadow */
+}
+
+#explanation h1 {
+    font-size: 24px;
+}
+
+#explanation h2 {
+    font-size: 20px;
+}
+
+#explanation h3 {
+    font-size: 18px;
+}
+
+/* Paragraph styles */
+#explanation p {
+    margin-bottom: 15px;
+}
+
+/* Code block styles (for <pre><code>) */
+#explanation pre {
+    background: #1a1a1a; /* Match code block background */
+    color: #ffffff; /* Match code block color */
+    padding: 12px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    border-left: 5px solid #00f2ff; /* Match code block border */
+}
+
+#explanation code {
+    font-family: 'Courier New', monospace;
+}
+
+/* Lists (unordered and ordered) */
+#explanation ul, #explanation ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+#explanation li {
+    margin-bottom: 5px;
+}
+
+/* Blockquote styles */
+#explanation blockquote {
+    border-left: 4px solid #666666;
+    padding-left: 15px;
+    margin: 15px 0;
+    font-style: italic;
+    color: #cccccc;
+}
+
+/* Horizontal rule styles */
+#explanation hr {
+    border: none;
+    border-top: 1px solid #444444;
+    margin: 20px 0;
+}
+
+/* Inline code styles */
+#explanation code {
+    background: #333333;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Bold and italic styles */
+#explanation strong {
+    font-weight: bold;
+}
+
+#explanation em {
+    font-style: italic;
+}
+
+/* Hidden Elements */
+.hidden {
+    display: none;
+}
