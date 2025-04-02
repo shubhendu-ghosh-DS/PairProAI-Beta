@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PairProAI - Your AI Pair Programmer</title>
+    
+    <!-- External CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Markdown Parser -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
 </head>
 <body>
+
     <div class="container">
         <h1>PairProAI</h1>
         <p class="subtitle">Your AI-Powered Pair Programmer</p>
@@ -28,7 +36,8 @@
                 <option value="Debug Your Code">Debug Your Code</option>
             </select>
 
-            <div id="language_select" class="hidden">
+            <!-- Target Language (For Code Translation) -->
+            <div id="language_select">
                 <label for="target_language">Target Language:</label>
                 <select id="target_language">
                     <option value="Python">Python</option>
@@ -44,6 +53,7 @@
                 </select>
             </div>
 
+            <!-- Error Message Box (For Debugging) -->
             <div id="error_message_box" class="hidden">
                 <label for="error_message">Paste Error Message:</label>
                 <textarea id="error_message" rows="3"></textarea>
@@ -52,15 +62,20 @@
 
         <button id="generate_btn">Generate Solution</button>
 
+        <!-- Output Section -->
         <div id="output_container" class="hidden">
             <h2>Generated Code</h2>
             <pre id="generated_code"></pre>
 
             <h2>Explanation</h2>
-            <p id="explanation"></p>
+            <div id="explanation"></div>  <!-- Markdown Output Here -->
+
+            <!-- Clear Button -->
+            <button id="clear_btn">Clear Output</button>
         </div>
     </div>
 
+    <!-- JavaScript -->
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
