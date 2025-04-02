@@ -209,3 +209,8 @@ pre {
 .hidden {
     display: none;
 }
+
+#clear_btn {
+    display: block;
+    margin: 20px auto;
+}
