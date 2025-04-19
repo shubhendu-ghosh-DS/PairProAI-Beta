@@ -113,8 +113,7 @@ https://shubhendu-ghosh-pairproai.hf.space/generate
 
 ## 📸 Screenshots
 
-![UI Screenshot](https://via.placeholder.com/900x500?text=PairProAI+User+Interface) <!-- Optional: You can add real screenshots here -->
-
+![UI Screenshot](https://github.com/shubhendu-ghosh-DS/PairProAI-Beta/blob/main/app/static/Screenshot%202025-04-19%20231252.png?raw=true)  
 ---
 
 ## 📬 Contact
