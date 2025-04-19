@@ -57,7 +57,7 @@ PairProAI-Beta/
 
 1. **Clone the Repository**
 ```bash
-git clone https://github.com/your-username/PairProAI-Beta.git
+git clone https://huggingface.co/spaces/shubhendu-ghosh/PairProAI-Beta
 cd PairProAI-Beta
 ```
 
