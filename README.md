@@ -1,4 +1,3 @@
-```
 # PairProAI-Beta 🚀
 **Live App:** [PairProAI-Beta on Hugging Face Spaces](https://shubhendu-ghosh-pairproai-beta.hf.space)
 
@@ -129,4 +128,3 @@ If you find this useful, feel free to connect or drop a message!
 ## 📄 License
 
 This project is for educational and demo purposes. For commercial use or contributions, please reach out to the author.
-```
